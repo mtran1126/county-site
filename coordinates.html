@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coordinate Checker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1> Delaware County Coordinate Checker </h1>
+    <p> Eneter a latitude and longitude to check if the point is in Delaware County, PA.
+    </p>
+
+    <div class="input-row">
+        <label for="lat-input">Latitude:</label>
+        <input
+            type="text"
+            id="lat-input"
+            placeholder="e.g. 39.92"
+        >
+    </div>
+
+    <div class="input-row">
+        <label for="lon-input">Longitude:</label>
+        <input
+            type="text"
+            id="lon-input"
+            placeholder="e.g. -75.40"
+        >
+    </div>
+
+    <button onclick="checkCoords()">Check Location</button>
+
+    <div id="result"></div>
+
+    <nav>
+        <a href="index.html">Home</a> |
+        <a href="towns.html">Notable Towns</a> |
+        <a href="mytown.html">My Favorite Places</a>
+    </nav>
+
+    <script src="js/coordinates.js"></script>
+
+</body>
+</html>
