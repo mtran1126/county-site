@@ -10,7 +10,7 @@
   <body>
     <h1>Delaware County, Pennsylvania</h1>
 
-    <p>
+    <p id="county-desc">
       Delaware County, also known as Delco, is the third-smallest county in Pennsylvania by area,
       covering 191 square miles. The county seat is Media.
     </p>
@@ -18,6 +18,14 @@
     <p>
       Created in 1789, Delaware County is in the Commonwealth of Pennsylvania and home to over 576,000 residents.
     </p>
+
+    <button id="toggle-btn">Hide Station</button>
+
+    <div id="station-section">
+      <h2>Radio Station Signal Check</h2>
+      <p id="station-result"></p>
+      <p id="station-detail"></p>
+    </div>
 
     <a href="https://en.wikipedia.org/wiki/Delaware_County,_Pennsylvania" target="_blank" rel="noopener noreferrer">Read more about Delaware County on Wikipedia</a>
 
@@ -29,5 +37,6 @@
       <a href="coordinates.html">Coodinate Checker</a>
     </nav>
     <script src="js/county.js"></script>
+    <script src="js/dom.js"></script>
   </body>
 </html>
