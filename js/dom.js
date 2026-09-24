@@ -75,3 +75,32 @@ toggleBtn.addEventListener("click", () => {
         toggleBtn.textContent = "Hide Judy's Station"
     }
 });
+
+const photoBtn = document.querySelector("#photo-btn");
+const photoContainer = document.querySelector("#photo-container");
+
+let photoShown = false;
+let photoImg = null;
+
+photoBtn.addEventListener("click", () => {
+
+    if (!photoShown) {
+        photoImg = document.createElement("img");
+
+        photoImg.src = "img/ridley-creek.png";
+        photoImg.alt = "Ridley Creek in Delaware County, Pennsylvania";
+
+        photoContainer.appendChild(photoImg);
+
+        photoBtn.textContent = "Hide Photo";
+        photoShown = true;
+    }
+    else {
+        photoImg.remove();
+
+        photoImg = null;
+
+        photoBtn.textContent = "Show Photo";
+        photoShown = false;
+    }
+});
